@@ -1,5 +1,5 @@
-let playerWins=0;
-let computerWins=0;
+let playerWinsCount=0;
+let computerWinsCount=0;
 
 function getComputerChoice(){
     const computerOptionsList=['Rock','Paper','Scissors'];
@@ -8,6 +8,7 @@ function getComputerChoice(){
     return computerOptionsList[randomChoiceIndex].toLowerCase();
 }
 
+//returns the player's choice
 function getPlayerChoice(){
 let playerChoice = prompt("Please enter your selection:");
 return playerChoice.toLocaleLowerCase();
